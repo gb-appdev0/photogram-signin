@@ -15,6 +15,16 @@
   </head>
 
   <body>
+    <nav>
+      <ul>
+        <li><a href="/users">Users</a></li>
+        <li><a href="/photos">Photos</a></li>
+        <li><a href="/user_sign_up">New User</a></li>
+        <li><%= session.fetch(:user_id) %></li>
+        <li><a href="/user_sign_out">Sign Out</a></li>
+        <li><a href="/user_sign_in">Sign in</a></li>
+      </ul>
+    </nav>
     <%= yield %>
   </body>
 </html>
